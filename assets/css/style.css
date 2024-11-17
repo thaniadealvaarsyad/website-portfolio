@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(/assets/img/8DMCdLv.jpg);
+    backdrop-filter: blur(10px);
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #121212;
+    height: 50px;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: darkslateblue;
+    text-shadow: 0 0 25px darkslateblue,
+                 0 0 50px darkslateblue;
+    transform: scale(1.1);
+}
+
+.navbar{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li{
+    transition: 0.2s ease;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+
+.navbar ul li a:hover{
+    color: white;
+    text-shadow: 0 0 25px darkslateblue,
+                 0 0 50px darkslateblue;
+    transition: linear 0.2s;
+}
+
+.content{
+    padding-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.container{
+    position: relative;
+    padding-left: 200px;
+}
+
+
+.container>img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50% 50% 0 0;
+}
+
+.container .name{
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 20px darkslateblue;
+}
+
+.container .teks{
+    position: absolute;
+    left: 30px;
+    bottom: 90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container .icon{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.container .icon > img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.content2{
+    position: relative;
+}
+
+.content2 > span{
+    font-size: 80px;
+    font-weight: bold;
+    color: darkorange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quotes{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quotes > span{
+    font-size: 40px;
+    color: darkorange;
+}
+
+.image{
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
+.content2 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about{
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: #121212;
+}
+
+.about-img img{
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.skills {
+    width: 100%;
+    min-height: 110vh;
+    padding: 50px 0;
+}
+
+.heading-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.heading-container p{
+    color: white;
+}
+
+.heading span {
+    color: #ff6347;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.education {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8%;
+    gap: 10em;
+    background-color: #121212;
+}
+
+.education-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.education-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    text-align: center;
+    width: 45%;
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover{
+    transform: translateY(-10px);
+}
+
+.education-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item span {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.education-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.edu-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.experience {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    color: white;
+}
+
+.experience-content p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+.work {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8%;
+    gap: 10em;
+    background: #121212;
+    color: white;
+}
+
+.work-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.work-content p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+.blog {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8%;
+    color: white;
+}
+
+.blog-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.blog-content p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8%;
+    background: #202020; /* Warna gelap elegan */
+    color: white;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background: #2196f3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: scale(1.1);
+    background: #1976d2; /* Lebih gelap dikit saat hover */
+}
+
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social {
+    margin-bottom: 10px;
+}
+
+.footer .social a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer .social a img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.footer .social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #bbb;
+}
+
+.footer-content p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content p a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 20px 5%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .content{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .container img{
+        width: 150px;
+    }
+    .container .name{
+        font-size: 30px;
+        left: 40px;
+    }
+    .container .teks{
+        bottom: 60px;
+    }
+    .quotes{
+        font-size: 16px;
+    }
+    .quotes > span{
+        font-size: 30px;
+        color: darkorange;
+    }
+    .content2 img{
+        width: 150px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .education-box{
+        flex-direction: column;
+    }
+    .education-item {
+        width: 100%;
+        padding: 15px;
+    }
+}
