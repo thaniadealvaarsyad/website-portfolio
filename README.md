@@ -1,3 +1,3 @@
 # website-portfolio
 
-https://thaniadealvaarsyad.github.io/website-portfolio
+https://thaniadealvaarsyad.github.io/website-portfolio/
